@@ -1,15 +1,7 @@
 package main
 
-import "encoding/json"
+import "fmt"
 
-type MapStringInt map[string]int
-
-func MarshalMapStringInt(m MapStringInt) ([]byte, error) {
-	return json.Marshal(m)
-}
-
-func UnmarshalMapStringInt(data []byte) (MapStringInt, error) {
-	var m MapStringInt
-	err := json.Unmarshal(data, &m)
-	return m, err
+func main() {
+	fmt.Println("Hello map string int")
 }
